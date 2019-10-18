@@ -37,15 +37,12 @@ Useful bash one-liners useful for bioinformatics (and [some, more generally usef
 
 [[back to top](#contents)]
 
-
-Extract fields 2, 4, and 5 from file.txt:
-
-    awk '{print $2,$4,$5}' input.txt
+`awk '{print $2,$4,$5}' input.txt`  Extract fields 2, 4, and 5 from file.txt
 
 
-Print each line where the 5th field is equal to ‘abc123’:
+`awk '$5 == "abc123"' file.txt`     Print each line where the 5th field is equal to ‘abc123’:
 
-    awk '$5 == "abc123"' file.txt
+    
 
 
 Print each line where the 5th field is *not* equal to ‘abc123’:
