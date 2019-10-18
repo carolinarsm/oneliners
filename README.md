@@ -37,22 +37,12 @@ Useful bash one-liners useful for bioinformatics (and [some, more generally usef
 
 [[back to top](#contents)]
 
-`awk '{print $2,$4,$5}' input.txt`  Extract fields 2, 4, and 5 from file.txt
-
-
-`awk '$5 == "abc123"' file.txt`     Print each line where the 5th field is equal to ‘abc123’:
-
-    
-
-
-Print each line where the 5th field is *not* equal to ‘abc123’:
-
-    awk '$5 != "abc123"' file.txt
-
-
-Print each line whose 7th field matches the regular expression:
-
-    awk '$7  ~ /^[a-f]/' file.txt
+|command|purpose|
+|---|---|
+|`awk '{print $2,$4,$5}' input.txt`  |Extract fields 2, 4, and 5 from file.txt|
+|`awk '$5 == "abc123"' file.txt`     |Print each line where the 5th field is equal to ‘abc123’|
+|`awk '$5 != "abc123"' file.txt`|Print each line where the 5th field is *not* equal to ‘abc123’|
+|`awk '$7  ~ /^[a-f]/' file.txt`|Print each line whose 7th field matches the regular expression|
 
 
 Print each line whose 7th field *does not* match the regular expression:
